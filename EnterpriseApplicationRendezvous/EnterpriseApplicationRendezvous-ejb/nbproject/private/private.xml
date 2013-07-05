@@ -1,4 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/1">
+        <file>file:/C:/Users/Aileen/Documents/NetBeansProjects/EnterpriseApplicationRendezvous/EnterpriseApplicationRendezvous-ejb/src/conf/beans.xml</file>
+        <file>file:/C:/Users/Aileen/Documents/NetBeansProjects/EnterpriseApplicationRendezvous/EnterpriseApplicationRendezvous-ejb/src/conf/persistence.xml</file>
+        <file>file:/C:/Users/Aileen/Documents/NetBeansProjects/EnterpriseApplicationRendezvous/EnterpriseApplicationRendezvous-ejb/src/conf/MANIFEST.MF</file>
+        <file>file:/C:/Users/Aileen/Documents/NetBeansProjects/EnterpriseApplicationRendezvous/EnterpriseApplicationRendezvous-ejb/setup/glassfish-resources.xml</file>
+        <file>file:/C:/Users/Aileen/Documents/NetBeansProjects/EnterpriseApplicationRendezvous/EnterpriseApplicationRendezvous-ejb/src/java/sessionbeans/TrabajadorFacadeLocal.java</file>
+        <file>file:/C:/Users/Aileen/Documents/NetBeansProjects/EnterpriseApplicationRendezvous/EnterpriseApplicationRendezvous-ejb/src/java/sessionbeans/TipoCargoFacadeLocal.java</file>
+        <file>file:/C:/Users/Aileen/Documents/NetBeansProjects/EnterpriseApplicationRendezvous/EnterpriseApplicationRendezvous-ejb/src/java/sessionbeans/TrabajadorFacade.java</file>
+        <file>file:/C:/Users/Aileen/Documents/NetBeansProjects/EnterpriseApplicationRendezvous/EnterpriseApplicationRendezvous-ejb/src/java/sessionbeans/TipoCargoFacade.java</file>
+        <file>file:/C:/Users/Aileen/Documents/NetBeansProjects/EnterpriseApplicationRendezvous/EnterpriseApplicationRendezvous-ejb/src/java/sessionbeans/ComunaFacade.java</file>
+        <file>file:/C:/Users/Aileen/Documents/NetBeansProjects/EnterpriseApplicationRendezvous/EnterpriseApplicationRendezvous-ejb/src/java/entities/Trabajador.java</file>
+    </open-files>
 </project-private>
