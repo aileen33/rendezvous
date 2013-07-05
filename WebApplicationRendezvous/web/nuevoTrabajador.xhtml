@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://java.sun.com/jsf/core">
+    <h:head>
+        <title>Agregar Trabajador</title>
+    </h:head>
+    <h:body>
+        <h:form>
+            <p:panelGrid columns="2">
+                <h:outputLabel value="Rut" />
+                <p:inputText value="#{managedBeanTrabajador.rut}"/>
+                <h:outputLabel value="Nombre" />
+                <p:inputText value="#{managedBeanTrabajador.nombre}"/>
+                <h:outputLabel value="Apellido Paterno" />
+                <p:inputText value="#{managedBeanTrabajador.apellido_pat}"/>
+                <h:outputLabel value="Apellido Materno" />
+                <p:inputText value="#{managedBeanTrabajador.apellido_mat}"/>
+                <h:outputLabel value="Dirección" />
+                <p:inputText value="#{managedBeanTrabajador.direccion}"/>
+                <h:outputLabel value="Teléfono" />
+                <p:inputText value="#{managedBeanTrabajador.telefono}"/>
+                <h:outputLabel value="Correo" />
+                <p:inputText value="#{managedBeanTrabajador.correo}"/>
+                <h:outputText value="Cargo" />  
+                <p:selectOneMenu value="#{managedBeanTrabajador.cargo_nombre}">   
+                    <f:selectItems value="#{managedBeanCargo.tipoCargos}" var="cargos" itemLabel="#{cargos.nombreCargo}" itemValue="#{cargos}"/>  
+                </p:selectOneMenu> 
+                <h:outputText value="Comuna" />  
+                <p:selectOneMenu value="#{managedBeanTrabajador.comuna_nombre}">   
+                    <f:selectItems value="#{managedBeanComuna.comunas}" var="comunas" itemLabel="#{comunas.nombreComuna}" itemValue="#{comunas}"/>  
+                </p:selectOneMenu> 
+                <p:commandButton value="Ingresar" action="#{managedBeanTrabajador.nuevoTrabajador()}"/>
+            </p:panelGrid>
+        </h:form>
+    </h:body>
+</html>
+

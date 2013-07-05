@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>Ver Trabajador</title>
+    </h:head>
+    <h:body>
+        <h:form>
+            <p:dataTable var="trabajador" value="#{managedBeanTrabajador.trabajadores}">
+                <p:column headerText="Rut">
+                    <h:outputText value="#{trabajador.rutTrab}"/>
+                </p:column>
+                <p:column headerText="Nombre">
+                    <h:outputText value="#{trabajador.nombreTrab}"/>
+                </p:column>
+                <p:column headerText="Apellido Paterno">
+                    <h:outputText value="#{trabajador.apellidoPatTrab}"/>
+                </p:column>
+                <p:column headerText="Apellido Materno">
+                    <h:outputText value="#{trabajador.apellidoMatTrab}"/>
+                </p:column>
+                <p:column headerText="Cargo">
+                    <h:outputText value="#{trabajador.idCargo}"/>
+                </p:column>
+                <p:column headerText="Comuna">
+                    <h:outputText value="#{trabajador.idComuna}"/>
+                </p:column>
+                <p:column headerText="Correo">
+                    <h:outputText value="#{trabajador.correoTrab}"/>
+                </p:column>
+                <p:column headerText="Teléfono">
+                    <h:outputText value="#{trabajador.telefonoTrab}"/>
+                </p:column>
+                <p:column headerText="Fecha de Nacimiento">
+                    <h:outputText value="#{trabajador.fechaNacTrab}"/>
+                </p:column>
+                <p:column headerText="Dirección">
+                    <h:outputText value="#{trabajador.direccionTrab}"/>
+                </p:column>
+            </p:dataTable>
+        </h:form>
+    </h:body>
+</html>
+
