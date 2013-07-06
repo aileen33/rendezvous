@@ -2,13 +2,23 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://java.sun.com/jsf/html"
-      xmlns:p="http://primefaces.org/ui">
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://java.sun.com/jsf/core">
     <h:head>
         <title>Ver Trabajador</title>
     </h:head>
     <h:body>
         <h:form>
+            <p:fieldset  legend="Administrar Trabajadores">
+             <h:panelGrid columns="2" style="margin-bottom:10px" cellpadding="5"  
+                 columnClasses="label, column">    </h:panelGrid>
+  
+        <h:outputText value="Trabajadores Registrados" style=" font-weight: bold"/>  
+        <p:selectOneListbox  value="#{managedBeanTrabajador.nombre}"  style="width:400px;">  
+            <f:selectItems value="#{managedBeanTrabajador.trabajadores}" var="trabajadores" itemLabel="#{trabajadores.rutTrab}  #{trabajadores.nombreTrab} #{trabajadores.apellidoPatTrab} " itemValue="#{trabajadores.rutTrab}"/>  
+        </p:selectOneListbox>  
             <p:dataTable var="trabajador" value="#{managedBeanTrabajador.trabajadores}">
+            
                 <p:column headerText="Rut">
                     <h:outputText value="#{trabajador.rutTrab}"/>
                 </p:column>
@@ -40,6 +50,9 @@
                     <h:outputText value="#{trabajador.direccionTrab}"/>
                 </p:column>
             </p:dataTable>
+          </p:fieldset>
+               
+       
         </h:form>
     </h:body>
 </html>

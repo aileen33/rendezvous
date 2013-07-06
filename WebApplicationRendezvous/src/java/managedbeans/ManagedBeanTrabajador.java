@@ -161,7 +161,7 @@ public class ManagedBeanTrabajador {
     
     public void nuevoTrabajador(){
         Trabajador trabajador;
-        trabajador = new Trabajador(rut, nombre, apellido_pat, apellido_pat, direccion, telefono, correo);
+        trabajador = new Trabajador(rut, nombre, apellido_pat, apellido_mat, direccion, telefono, correo);
         // Guardar el cargo seleccionado
         boolean cont=true;
         int cont1=1;

@@ -9,6 +9,7 @@
     </h:head>
     <h:body>
         <h:form>
+            <p:fieldset legend="Agregar Nuevo Empleado">
             <p:panelGrid columns="2">
                 <h:outputLabel value="Rut" />
                 <p:inputText value="#{managedBeanTrabajador.rut}"/>
@@ -32,8 +33,11 @@
                 <p:selectOneMenu value="#{managedBeanTrabajador.comuna_nombre}">   
                     <f:selectItems value="#{managedBeanComuna.comunas}" var="comunas" itemLabel="#{comunas.nombreComuna}" itemValue="#{comunas}"/>  
                 </p:selectOneMenu> 
-                <p:commandButton value="Ingresar" action="#{managedBeanTrabajador.nuevoTrabajador()}"/>
             </p:panelGrid>
+                <br></br>
+                 <p:commandButton value="Ingresar" action="#{managedBeanTrabajador.nuevoTrabajador()}"/>
+                  <p:commandButton value="Cancelar" type="reset"/>
+          </p:fieldset>
         </h:form>
     </h:body>
 </html>

@@ -52,7 +52,10 @@ public class Usuario implements Serializable {
     public Usuario(String username) {
         this.username = username;
     }
-
+    public Usuario(String username,String password) {
+        this.username = username;
+        this.password = password;
+    }
     public String getUsername() {
         return username;
     }
